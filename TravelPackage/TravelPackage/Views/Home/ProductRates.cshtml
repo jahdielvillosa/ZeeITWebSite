@@ -1,0 +1,24 @@
+﻿@model IEnumerable<TravelPackage.Models.tpProdRate>
+@{ 
+    int iCnt = Model.Count();
+}
+<div class="row">
+    @if (iCnt > 0)
+    {
+        <h2>Rate</h2>
+    }
+
+    @foreach (var item in Model)
+    {
+        <div class="col-md-2">
+            <p>
+                <span style="font-size:xx-small;color:red;">(@item.GroupOf pax)</span>
+                <br />@item.Rate/@item.tpUom.Measure <br /></p>
+        </div>
+    }
+    <hr />
+    
+</div>
+
+
+

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<TravelPackage.Models.tpProductImages>
+
+@{
+    ViewBag.Title = "Product Images";
+    ViewBag.metaTitle = "Travel | Tour Images";
+}
+
+<h2>Products, Travel and Tour Images</h2>
+
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <a href="@item.ImgPath" title="@item.AltName">
+                <img width="100%;" src="@item.ImgPath" alt="@item.AltName">
+            </a>
+            <p>@item.Desc
+                <br />
+                @Html.ActionLink(@item.tpProduct.Name, "Product","home", new { id = @item.tpProduct.Id, ProductName = @item.tpProduct.Name }, null )
+            </p>
+        </div>
+    }
+
+</div>
+

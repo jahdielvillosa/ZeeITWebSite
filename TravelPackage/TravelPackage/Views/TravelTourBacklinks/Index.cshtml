@@ -1,0 +1,21 @@
+﻿@model IEnumerable<TravelPackage.Models.tpBacklink>
+
+@{
+    ViewBag.Title = "Backlinks";
+    ViewBag.metaTitle = "Backlinks - Travel | Vacation | Tour Packages";
+
+    int iK = 0;
+}
+
+<h2>Backlinks</h2>
+
+@foreach (var item in Model)
+{
+    iK++;
+    if (iK > 1)
+    {
+            <span><br /></span>
+    }
+ 
+    <a href="@item.LinkUrl">@item.Description</a>
+}

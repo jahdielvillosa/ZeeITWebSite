@@ -1,0 +1,30 @@
+﻿@model IEnumerable<TravelPackage.Models.tpBacklink>
+
+@{
+    int iCnt = Model.Count();
+    int iK = 0;
+}
+
+<div class="row">
+    @if (iCnt > 0)
+    {
+        <h1><span style="font-size:medium">More</span></h1>
+    }
+
+    <div class="col-md-10">
+        <p>
+            @foreach (var item in Model)
+            {
+                iK++;
+                if (iK > 1)
+                {
+                    <span><br /></span>
+                }
+                <a href="@item.LinkUrl">@item.Description</a>
+            }
+        </p>
+    </div>
+</div>
+
+
+

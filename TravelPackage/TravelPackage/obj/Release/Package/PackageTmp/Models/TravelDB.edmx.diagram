@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ef568aae1d884407becaac57b218a8b1" Name="Diagram1" >
+        <EntityTypeShape EntityType="TravelDB.tpAreas" Width="1.5" PointX="3.125" PointY="0.5" />
+        <EntityTypeShape EntityType="TravelDB.tpProducts" Width="1.5" PointX="3.125" PointY="3.625" />
+        <AssociationConnector Association="TravelDB.tpAreastpProducts" />
+        <EntityTypeShape EntityType="TravelDB.tpProductImages" Width="1.5" PointX="0.5" PointY="6.25" />
+        <AssociationConnector Association="TravelDB.tpProductstpProductImages" />
+        <EntityTypeShape EntityType="TravelDB.tpInquiry" Width="1.5" PointX="8" PointY="4" />
+        <EntityTypeShape EntityType="TravelDB.tpProdCat" Width="1.5" PointX="0.5" PointY="3.75" />
+        <EntityTypeShape EntityType="TravelDB.tpCategory" Width="1.5" PointX="0.5" PointY="1.25" />
+        <AssociationConnector Association="TravelDB.tpCategorytpProdCat" />
+        <AssociationConnector Association="TravelDB.tpProductstpProdCat" />
+        <EntityTypeShape EntityType="TravelDB.tpInqServices" Width="1.5" PointX="8" PointY="7.625" />
+        <AssociationConnector Association="TravelDB.tpProductstpInqServices" />
+        <AssociationConnector Association="TravelDB.tpInquirytpInqServices" />
+        <EntityTypeShape EntityType="TravelDB.tpProdRate" Width="1.5" PointX="5.625" PointY="3.625" />
+        <AssociationConnector Association="TravelDB.tpProductstpProdRate" />
+        <EntityTypeShape EntityType="TravelDB.tpUom" Width="1.5" PointX="5.625" PointY="1.25" />
+        <AssociationConnector Association="TravelDB.tpUomtpProdRate" />
+        <EntityTypeShape EntityType="TravelDB.tpProductDesc" Width="1.5" PointX="0.5" PointY="9.125" />
+        <AssociationConnector Association="TravelDB.tpProductstpProductDesc" />
+        <EntityTypeShape EntityType="TravelDB.tpKeyword" Width="1.5" PointX="0.625" PointY="11.875" />
+        <AssociationConnector Association="TravelDB.tpProductstpKeyword" />
+        <EntityTypeShape EntityType="TravelDB.tpBacklink" Width="1.5" PointX="4.75" PointY="10.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

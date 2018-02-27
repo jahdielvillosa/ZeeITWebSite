@@ -1,0 +1,25 @@
+﻿@model IEnumerable<TravelPackage.Models.tpKeyword>
+
+@{
+    ViewBag.Title = "Travel Tour Tags";
+    var keywords = Model.Select(d => d.Keyword).Distinct();
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Tags
+        </th>
+    </tr>
+
+@foreach (var item in keywords) {
+    <tr>
+        <td>
+            @Html.ActionLink(item, "PackagesByTags", "TravelTourPackages", new { sTag = item }, null)
+        </td>
+    </tr>
+}
+
+</table>

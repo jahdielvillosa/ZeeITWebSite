@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "RequestQuote";
+    IEnumerable<TravelPackage.Models.tpProducts> AddOns = (IEnumerable<TravelPackage.Models.tpProducts>)ViewBag.Addons;
+    IEnumerable<TravelPackage.Models.tpInqServices> AddedProducts = (IEnumerable<TravelPackage.Models.tpInqServices>)ViewBag.Added;
+}
+
+<h2>Quotation Request</h2>
+<p>
+    Dear Customer:
+    <br />
+    <br />Your request is now processed in our system.
+    <br />
+    <br />
+</p>
+
+<p>
+    --- Requested Products ---
+</p>
+@foreach (var item in AddedProducts)
+{
+    <p>
+        <span>-@item.dtSvcStart.ToString("dd/MMM/yyyy")</span>
+        <span>-@item.tpProduct.Name</span>
+    </p> 
+}
+<p>
+    --- End of list ---
+</p>
+<p>
+    <br /> Rgds!
+    <br /> Sales Team
+    <br /> RealBreeze Travel and Tours
+    <br />
+</p>
+
+<div class="row" style="background-color: #eeeeee;">
+    <h2>Other Products</h2>
+</div>
+
+    <div class="row">
+        @foreach (var item in AddOns)
+        {
+            <div class="col-md-2">
+                <h4>@item.Name</h4>
+                <a href="http://realbreezedavaotours.com/TourPackages/samal-inland-package-tour/" title="@item.Name"><img width="100%" src="@item.PgFeatureImg"></a>
+                <p>@item.ShortRemarks</p>
+                <p>
+                    @Html.ActionLink("Add to Request", "AddRequestProduct", new { id = @item.Id }, new { @class = "btn btn-default" })
+                </p>
+            </div>
+        }
+    </div>
+
+
+    @Html.ActionLink("Back", "Index")
+
+

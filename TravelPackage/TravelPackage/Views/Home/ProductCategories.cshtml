@@ -1,0 +1,31 @@
+﻿@model IEnumerable<TravelPackage.Models.tpCategory>
+@{
+    int iCnt = Model.Count();
+    int iK = 0;
+}
+
+<p>
+    @if (iCnt > 0)
+    {
+        <span style="font-size:small">Categories</span>
+
+    }
+
+    <span style="font-size:small">
+    @foreach (var item in Model)
+    {
+
+        iK++;
+        if (iK > 1)
+        {
+            <span>&nbsp;</span>
+        }
+
+        @Html.ActionLink(item.Description, "PackagesByCategory", "TravelTourPackages", new { CategoryId = item.Id }, null)
+
+    }
+    </span>
+</p>
+
+
+

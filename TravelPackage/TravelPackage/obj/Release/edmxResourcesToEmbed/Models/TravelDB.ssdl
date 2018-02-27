@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TravelDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="TravelDBStoreContainer">
+    <EntitySet Name="tpAreas" EntityType="TravelDB.Store.tpAreas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpProducts" EntityType="TravelDB.Store.tpProducts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpProductImages" EntityType="TravelDB.Store.tpProductImages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpInquiries" EntityType="TravelDB.Store.tpInquiries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpProdCats" EntityType="TravelDB.Store.tpProdCats" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpCategories" EntityType="TravelDB.Store.tpCategories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpInqServices" EntityType="TravelDB.Store.tpInqServices" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpProdRates" EntityType="TravelDB.Store.tpProdRates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpUoms" EntityType="TravelDB.Store.tpUoms" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpProductDescs" EntityType="TravelDB.Store.tpProductDescs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpKeywords" EntityType="TravelDB.Store.tpKeywords" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tpBacklinks" EntityType="TravelDB.Store.tpBacklinks" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="tpAreastpProducts" Association="TravelDB.Store.tpAreastpProducts">
+      <End Role="tpAreas" EntitySet="tpAreas" />
+      <End Role="tpProducts" EntitySet="tpProducts" />
+    </AssociationSet>
+    <AssociationSet Name="tpProductstpProductImages" Association="TravelDB.Store.tpProductstpProductImages">
+      <End Role="tpProducts" EntitySet="tpProducts" />
+      <End Role="tpProductImages" EntitySet="tpProductImages" />
+    </AssociationSet>
+    <AssociationSet Name="tpCategorytpProdCat" Association="TravelDB.Store.tpCategorytpProdCat">
+      <End Role="tpCategory" EntitySet="tpCategories" />
+      <End Role="tpProdCat" EntitySet="tpProdCats" />
+    </AssociationSet>
+    <AssociationSet Name="tpProductstpProdCat" Association="TravelDB.Store.tpProductstpProdCat">
+      <End Role="tpProducts" EntitySet="tpProducts" />
+      <End Role="tpProdCat" EntitySet="tpProdCats" />
+    </AssociationSet>
+    <AssociationSet Name="tpProductstpInqServices" Association="TravelDB.Store.tpProductstpInqServices">
+      <End Role="tpProducts" EntitySet="tpProducts" />
+      <End Role="tpInqServices" EntitySet="tpInqServices" />
+    </AssociationSet>
+    <AssociationSet Name="tpInquirytpInqServices" Association="TravelDB.Store.tpInquirytpInqServices">
+      <End Role="tpInquiry" EntitySet="tpInquiries" />
+      <End Role="tpInqServices" EntitySet="tpInqServices" />
+    </AssociationSet>
+    <AssociationSet Name="tpProductstpProdRate" Association="TravelDB.Store.tpProductstpProdRate">
+      <End Role="tpProducts" EntitySet="tpProducts" />
+      <End Role="tpProdRate" EntitySet="tpProdRates" />
+    </AssociationSet>
+    <AssociationSet Name="tpUomtpProdRate" Association="TravelDB.Store.tpUomtpProdRate">
+      <End Role="tpUom" EntitySet="tpUoms" />
+      <End Role="tpProdRate" EntitySet="tpProdRates" />
+    </AssociationSet>
+    <AssociationSet Name="tpProductstpProductDesc" Association="TravelDB.Store.tpProductstpProductDesc">
+      <End Role="tpProducts" EntitySet="tpProducts" />
+      <End Role="tpProductDesc" EntitySet="tpProductDescs" />
+    </AssociationSet>
+    <AssociationSet Name="tpProductstpKeyword" Association="TravelDB.Store.tpProductstpKeyword">
+      <End Role="tpProducts" EntitySet="tpProducts" />
+      <End Role="tpKeyword" EntitySet="tpKeywords" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tpAreas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="PageRemarks" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="PageView" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="PgFeatureImg" Type="nvarchar" Nullable="true" MaxLength="150" />
+    <Property Name="Sort" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tpProducts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="ShortRemarks" Type="nvarchar" Nullable="true" MaxLength="250" />
+    <Property Name="PageView" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="PgFeatureImg" Type="nvarchar" Nullable="true" MaxLength="150" />
+    <Property Name="Sort" Type="int" Nullable="false" />
+    <Property Name="tpAreasId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tpProductImages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tpProductsId" Type="int" Nullable="false" />
+    <Property Name="ImgPath" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Desc" Type="nvarchar" Nullable="true" MaxLength="150" />
+    <Property Name="AltName" Type="nvarchar" Nullable="true" MaxLength="80" />
+    <Property Name="Sort" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tpInquiries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dtInquiry" Type="datetime" Nullable="false" />
+    <Property Name="LeadGuest" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="ContactNo" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" Nullable="true" MaxLength="120" />
+    <Property Name="NoOfChild" Type="int" Nullable="false" />
+    <Property Name="NoOfAdult" Type="int" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tpProdCats">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tpCategoryId" Type="int" Nullable="false" />
+    <Property Name="tpProductsId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tpCategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="SysCode" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tpInqServices">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tpInquiryId" Type="int" Nullable="false" />
+    <Property Name="tpProductsId" Type="int" Nullable="false" />
+    <Property Name="dtSvcStart" Type="datetime" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" Nullable="true" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="tpProdRates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tpProductsId" Type="int" Nullable="false" />
+    <Property Name="tpUomId" Type="int" Nullable="false" />
+    <Property Name="GroupOf" Type="int" Nullable="false" />
+    <Property Name="Rate" Type="decimal" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar" Nullable="true" MaxLength="80" />
+    <Property Name="Sort" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tpUoms">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Measure" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Remarks" Type="nvarchar" Nullable="true" MaxLength="180" />
+  </EntityType>
+  <EntityType Name="tpProductDescs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tpProductsId" Type="int" Nullable="false" />
+    <Property Name="tpDescH1" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="tpDescH2" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="tpDesc" Type="nvarchar" Nullable="true" MaxLength="250" />
+    <Property Name="Sort" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tpKeywords">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Keyword" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="tpProductsId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tpBacklinks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LinkType" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="LinkUrl" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="LinkExpiry" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="3" />
+  </EntityType>
+  <Association Name="tpAreastpProducts">
+    <End Role="tpAreas" Type="TravelDB.Store.tpAreas" Multiplicity="1" />
+    <End Role="tpProducts" Type="TravelDB.Store.tpProducts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tpAreas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tpProducts">
+        <PropertyRef Name="tpAreasId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tpProductstpProductImages">
+    <End Role="tpProducts" Type="TravelDB.Store.tpProducts" Multiplicity="1" />
+    <End Role="tpProductImages" Type="TravelDB.Store.tpProductImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tpProducts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tpProductImages">
+        <PropertyRef Name="tpProductsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tpCategorytpProdCat">
+    <End Role="tpCategory" Type="TravelDB.Store.tpCategories" Multiplicity="1" />
+    <End Role="tpProdCat" Type="TravelDB.Store.tpProdCats" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tpCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tpProdCat">
+        <PropertyRef Name="tpCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tpProductstpProdCat">
+    <End Role="tpProducts" Type="TravelDB.Store.tpProducts" Multiplicity="1" />
+    <End Role="tpProdCat" Type="TravelDB.Store.tpProdCats" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tpProducts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tpProdCat">
+        <PropertyRef Name="tpProductsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tpProductstpInqServices">
+    <End Role="tpProducts" Type="TravelDB.Store.tpProducts" Multiplicity="1" />
+    <End Role="tpInqServices" Type="TravelDB.Store.tpInqServices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tpProducts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tpInqServices">
+        <PropertyRef Name="tpProductsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tpInquirytpInqServices">
+    <End Role="tpInquiry" Type="TravelDB.Store.tpInquiries" Multiplicity="1" />
+    <End Role="tpInqServices" Type="TravelDB.Store.tpInqServices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tpInquiry">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tpInqServices">
+        <PropertyRef Name="tpInquiryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tpProductstpProdRate">
+    <End Role="tpProducts" Type="TravelDB.Store.tpProducts" Multiplicity="1" />
+    <End Role="tpProdRate" Type="TravelDB.Store.tpProdRates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tpProducts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tpProdRate">
+        <PropertyRef Name="tpProductsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tpUomtpProdRate">
+    <End Role="tpUom" Type="TravelDB.Store.tpUoms" Multiplicity="1" />
+    <End Role="tpProdRate" Type="TravelDB.Store.tpProdRates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tpUom">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tpProdRate">
+        <PropertyRef Name="tpUomId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tpProductstpProductDesc">
+    <End Role="tpProducts" Type="TravelDB.Store.tpProducts" Multiplicity="1" />
+    <End Role="tpProductDesc" Type="TravelDB.Store.tpProductDescs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tpProducts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tpProductDesc">
+        <PropertyRef Name="tpProductsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tpProductstpKeyword">
+    <End Role="tpProducts" Type="TravelDB.Store.tpProducts" Multiplicity="1" />
+    <End Role="tpKeyword" Type="TravelDB.Store.tpKeywords" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tpProducts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tpKeyword">
+        <PropertyRef Name="tpProductsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

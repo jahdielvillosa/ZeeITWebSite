@@ -1,0 +1,31 @@
+﻿@model IEnumerable<TravelPackage.Models.tpAreas>
+
+@{
+    ViewBag.metaTitle = "Travel, Vacation and Tour Packages in Philippines";
+    ViewBag.metaDescription = "We are travel agency that provides affordable tour, vacation and travel packages to popular tourist destinations in the philippines.";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to Philippines!</h1>
+    <p>Get a well planned travel, relax and sound vacation, exciting and optimized tour</p>
+    <p class="lead">Find your best package here!</p>
+    <p>@ViewBag.UriArea</p>
+</div>
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-md-10">
+            <h2>@item.Name</h2>
+            <a href="@Url.Action("Destination",new { id = @item.Id, AreaName = @item.Name })" title="@item.Name"><img width="100%" src="@item.PgFeatureImg"></a>
+
+            <p>@item.PageRemarks</p>
+            <p>
+                @Html.ActionLink("GO TO " + @item.Name + " >>", "Destination", new { id = @item.Id, AreaName = @item.Name }, new { @class = "btn btn-default" } )
+
+            </p>
+        </div>
+    }
+
+</div>

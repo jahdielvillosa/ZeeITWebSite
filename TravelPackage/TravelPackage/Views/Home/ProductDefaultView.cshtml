@@ -1,0 +1,25 @@
+﻿@model TravelPackage.Models.tpProducts
+
+
+@{ 
+    List<TravelPackage.Models.tpProductDesc> tpDesc =
+        (List<TravelPackage.Models.tpProductDesc>) ViewBag.ProdDesc;
+}
+
+<div>
+    @foreach ( var item in tpDesc)
+    {
+        if (item.tpDescH1 != "")
+        {
+            <h1>@item.tpDescH1</h1>
+        }
+        if (item.tpDescH2 != "")
+        {
+            <h3>@item.tpDescH2</h3>
+        }
+        if (item.tpDesc != "")
+        {
+            <p>@item.tpDesc</p>
+        }
+    }
+</div>

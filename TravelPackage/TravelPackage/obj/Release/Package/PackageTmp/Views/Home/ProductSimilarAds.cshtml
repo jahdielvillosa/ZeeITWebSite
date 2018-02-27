@@ -1,0 +1,33 @@
+﻿@model IEnumerable<TravelPackage.Models.tpProducts>
+
+@{
+    int iCnt = Model.Count();
+    int iK = 0;
+}
+
+<div class="row">
+    @if (iCnt > 0)
+    {
+        <h1><span style="font-size:medium">Similar Products</span></h1>
+    }
+
+    <div class="col-md-10">
+        <p>
+            @foreach (var item in Model)
+            {
+                iK++;
+                if (iK > 1)
+                {
+                    <span><br /></span>
+                }
+
+                @Html.ActionLink(item.Name + "(" + item.tpArea.Name + ")", "Product", new { id = @item.Id, ProductName = @item.Name }, null )
+
+
+            }
+        </p>
+    </div>
+</div>
+
+
+

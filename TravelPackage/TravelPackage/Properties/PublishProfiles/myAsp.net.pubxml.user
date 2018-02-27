@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATmn4fi51IECv+VuQG043awAAAAACAAAAAAAQZgAAAAEAACAAAABSqGBjH8KyBlFZclTqhPqt4Yjo8FBUuYNU/xWF3H9cYwAAAAAOgAAAAAIAACAAAAC+o4F2Qbj6jLSx1en6zd/XaAS9Zx4DHzTbyfCw/tYYcSAAAAAOUGj1DAU0m6XNBcgW/9BoL6X464UHXGQmnhyL8V3730AAAABVLkGYsXtaT7bhW3lPrgxF6YiIIkInqOopqRY2qc5wsrZS2NMAw25dvV17Cqm7bHqonR1bW9Nm+vlCSDZDXncv</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.myasp.net/products</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>07/30/2017 13:44:17</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>07/30/2017 13:44:08</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>07/30/2017 13:44:17</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>07/30/2017 13:44:09</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>07/30/2017 13:44:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>07/30/2017 13:44:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>07/30/2017 13:44:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>07/30/2017 13:44:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>07/30/2017 13:44:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>07/30/2017 13:44:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>07/30/2017 13:44:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>07/30/2017 13:44:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>07/30/2017 13:44:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>07/30/2017 13:44:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>07/30/2017 13:44:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/30/2017 13:44:15</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/30/2017 13:44:16</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>07/30/2017 13:44:16</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>07/30/2017 13:44:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>07/30/2017 13:44:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>07/30/2017 13:44:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>07/30/2017 13:44:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>07/30/2017 13:44:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/30/2017 13:44:12</publishTime>
+    </File>
+    <File Include="bin/TravelPackage.dll">
+      <publishTime>09/10/2017 23:27:06</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/30/2017 13:44:16</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Content/daterangepicker.css">
+      <publishTime>08/09/2017 19:55:15</publishTime>
+    </File>
+    <File Include="Content/daterangepicker.scss">
+      <publishTime>08/09/2017 19:55:15</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>08/01/2017 22:36:11</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="googleccc62e697a97aaad.html">
+      <publishTime>08/09/2017 19:55:16</publishTime>
+    </File>
+    <File Include="Images/abreeza-mall.gif">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Images/Bohol101.png">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/CountrySide.gif">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/3d2nBoholVacation.png">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-01.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-02.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-03.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-04.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-05.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-06.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-07.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-08.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-09.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-10.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-11.png">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_alona-tropical-beach-resort-12.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_boholbeefarm_01.jpg">
+      <publishTime>08/11/2017 13:12:39</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_boholbeefarm_02.jpg">
+      <publishTime>08/11/2017 13:12:39</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_boholbeefarm_03.jpg">
+      <publishTime>08/11/2017 13:12:39</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_boholbeefarm_04.jpg">
+      <publishTime>08/11/2017 13:12:39</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_boholbeefarm_05.jpg">
+      <publishTime>08/11/2017 13:12:40</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_boholbeefarm_06.jpg">
+      <publishTime>08/11/2017 13:12:40</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_01.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_02.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_03.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_04.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_05.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_06.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_07.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_08.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_09.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_10.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_bohol_beachclub_11.jpeg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-01.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-02.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-03.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-04.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-05.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-06.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-07.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-08.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-09.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-10.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-11.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-12.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-13.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Dumaluan_beach-resort-14.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_Muro_Ami_Beach_Resort_01.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_01.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_02.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_03.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_04.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_05.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_06.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_07.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_08.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_09.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_10.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_11.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/accom_southpalmresort_12.jpg">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/Airlines101.png">
+      <publishTime>08/11/2017 13:12:39</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/Attraction_BoholIslandHopping.png">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_balicasag_island.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_balicasag_island_02.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_balicasag_island_03.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_balicasag_island_04.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_dolphin.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_snorkeling_01.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_snorkeling_02.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_snorkeling_03.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_virgin_island_01.JPG">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_virgin_island_02.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_islandHopping_virgin_island_03.jpg">
+      <publishTime>08/24/2017 00:12:43</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_Panglao_beach1.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_Panglao_beach2.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_Panglao_beach3.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_Panglao_beach4.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_Panglao_beefarm.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_Panglao_church.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_Panglao_dauis_church.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/attraction_Panglao_Hinagdanan_Cave.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/BaclayonChurch.jpg">
+      <publishTime>08/01/2017 22:36:11</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/BloodCompactShrine.jpg">
+      <publishTime>08/01/2017 22:36:11</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/ChocolateHills.jpg">
+      <publishTime>08/01/2017 22:36:11</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/CountrySideTour.png">
+      <publishTime>08/07/2017 15:16:12</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/holiday_bohol_3d2n_01.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/holiday_bohol_3d2n_02.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/holiday_bohol_3d2n_03.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/holiday_bohol_3d2n_04.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/holiday_bohol_3d2n_05.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/holiday_bohol_alona24.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/hotel.blue-star-dive-resort.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/hotel.JRresidence.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/hotel.ThePeacockGarden.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/LobocRiverCruising.jpg">
+      <publishTime>08/01/2017 22:36:11</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/ManMadeForest.jpg">
+      <publishTime>08/01/2017 22:36:11</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/panglao-map.png">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/PanglaoTour.png">
+      <publishTime>08/07/2017 15:16:12</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/PlanePAL.jpg">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/Tarsier.jpg">
+      <publishTime>08/01/2017 22:36:11</publishTime>
+    </File>
+    <File Include="Images/Destinations/Bohol/TigbaoHangingBridge.jpg">
+      <publishTime>08/01/2017 22:36:11</publishTime>
+    </File>
+    <File Include="Images/SamalIslandHopping.png">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Images/SamalTour.png">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Models/InitialData.sql">
+      <publishTime>09/10/2017 23:13:57</publishTime>
+    </File>
+    <File Include="Models/TravelDB.edmx.diagram">
+      <publishTime>09/10/2017 21:37:53</publishTime>
+    </File>
+    <File Include="Models/TravelDB.edmx.sql">
+      <publishTime>09/10/2017 21:27:07</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Scripts/DateRangePicker/bower.json">
+      <publishTime>08/09/2017 19:55:15</publishTime>
+    </File>
+    <File Include="Scripts/DateRangePicker/daterangepicker.js">
+      <publishTime>08/09/2017 19:55:15</publishTime>
+    </File>
+    <File Include="Scripts/DateRangePicker/moment.js">
+      <publishTime>08/09/2017 19:55:16</publishTime>
+    </File>
+    <File Include="Scripts/DateRangePicker/moment.min.js">
+      <publishTime>08/09/2017 19:55:16</publishTime>
+    </File>
+    <File Include="Scripts/DateRangePicker/package.js">
+      <publishTime>08/09/2017 19:55:16</publishTime>
+    </File>
+    <File Include="Scripts/DateRangePicker/package.json">
+      <publishTime>08/09/2017 19:55:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>07/30/2017 13:44:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Scripts/TravelPackages/Product.js">
+      <publishTime>08/11/2017 13:12:40</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>08/11/2017 13:12:40</publishTime>
+    </File>
+    <File Include="Views/Account/ConfirmEmail.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPassword.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/SendCode.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/VerifyCode.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>09/07/2017 18:30:43</publishTime>
+    </File>
+    <File Include="Views/Home/BoholPackages/3d2n_Panglao_Alona42.cshtml">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Views/Home/BoholPackages/AirTicket.cshtml">
+      <publishTime>08/11/2017 13:12:40</publishTime>
+    </File>
+    <File Include="Views/Home/BoholPackages/CountrySide.cshtml">
+      <publishTime>08/11/2017 13:12:40</publishTime>
+    </File>
+    <File Include="Views/Home/BoholPackages/IslandHopping.cshtml">
+      <publishTime>08/24/2017 00:12:44</publishTime>
+    </File>
+    <File Include="Views/Home/BoholPackages/Panglao.cshtml">
+      <publishTime>08/11/2017 13:12:40</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>09/07/2017 18:30:43</publishTime>
+    </File>
+    <File Include="Views/Home/Destination.cshtml">
+      <publishTime>08/24/2017 00:53:01</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>09/13/2017 10:44:48</publishTime>
+    </File>
+    <File Include="Views/Home/LinkSite.cshtml">
+      <publishTime>09/07/2017 18:30:43</publishTime>
+    </File>
+    <File Include="Views/Home/Product.cshtml">
+      <publishTime>09/11/2017 15:13:04</publishTime>
+    </File>
+    <File Include="Views/Home/ProductBacklinks.cshtml">
+      <publishTime>09/10/2017 21:55:30</publishTime>
+    </File>
+    <File Include="Views/Home/ProductCategories.cshtml">
+      <publishTime>09/11/2017 15:15:09</publishTime>
+    </File>
+    <File Include="Views/Home/ProductCustom.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Home/ProductDefaultView.cshtml">
+      <publishTime>08/11/2017 13:12:40</publishTime>
+    </File>
+    <File Include="Views/Home/ProductDefaultView2.cshtml">
+      <publishTime>08/01/2017 22:36:12</publishTime>
+    </File>
+    <File Include="Views/Home/ProductImages.cshtml">
+      <publishTime>08/24/2017 00:12:44</publishTime>
+    </File>
+    <File Include="Views/Home/ProductInquiry.cshtml">
+      <publishTime>08/11/2017 13:12:40</publishTime>
+    </File>
+    <File Include="Views/Home/ProductKeywords.cshtml">
+      <publishTime>09/11/2017 15:15:11</publishTime>
+    </File>
+    <File Include="Views/Home/ProductNearby.cshtml">
+      <publishTime>09/08/2017 17:30:57</publishTime>
+    </File>
+    <File Include="Views/Home/ProductRates.cshtml">
+      <publishTime>08/15/2017 12:14:21</publishTime>
+    </File>
+    <File Include="Views/Home/ProductSimilarAds.cshtml">
+      <publishTime>09/08/2017 17:30:57</publishTime>
+    </File>
+    <File Include="Views/Home/RequestBook.cshtml">
+      <publishTime>08/01/2017 22:36:12</publishTime>
+    </File>
+    <File Include="Views/Home/RequestProduct.cshtml">
+      <publishTime>08/01/2017 22:36:12</publishTime>
+    </File>
+    <File Include="Views/Home/RequestQuote.cshtml">
+      <publishTime>08/07/2017 15:15:50</publishTime>
+    </File>
+    <File Include="Views/Manage/AddPhoneNumber.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Manage/ChangePassword.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Manage/Index.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Manage/ManageLogins.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Manage/SetPassword.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>07/26/2017 14:15:23</publishTime>
+    </File>
+    <File Include="Views/Shared/Lockout.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/11/2017 13:12:40</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/tpAreas/Create.cshtml">
+      <publishTime>08/07/2017 15:13:20</publishTime>
+    </File>
+    <File Include="Views/tpAreas/Delete.cshtml">
+      <publishTime>08/07/2017 15:13:20</publishTime>
+    </File>
+    <File Include="Views/tpAreas/Details.cshtml">
+      <publishTime>08/07/2017 15:13:20</publishTime>
+    </File>
+    <File Include="Views/tpAreas/Edit.cshtml">
+      <publishTime>08/07/2017 15:13:20</publishTime>
+    </File>
+    <File Include="Views/tpAreas/Index.cshtml">
+      <publishTime>08/07/2017 15:13:20</publishTime>
+    </File>
+    <File Include="Views/tpProducts/Create.cshtml">
+      <publishTime>08/07/2017 15:13:20</publishTime>
+    </File>
+    <File Include="Views/tpProducts/Delete.cshtml">
+      <publishTime>08/07/2017 15:13:20</publishTime>
+    </File>
+    <File Include="Views/tpProducts/Details.cshtml">
+      <publishTime>08/07/2017 15:13:20</publishTime>
+    </File>
+    <File Include="Views/tpProducts/Edit.cshtml">
+      <publishTime>08/07/2017 15:13:20</publishTime>
+    </File>
+    <File Include="Views/tpProducts/Index.cshtml">
+      <publishTime>08/07/2017 15:13:20</publishTime>
+    </File>
+    <File Include="Views/TravelDestinations/Create.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/TravelDestinations/Delete.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/TravelDestinations/Details.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/TravelDestinations/Edit.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/TravelDestinations/Index.cshtml">
+      <publishTime>09/11/2017 05:01:54</publishTime>
+    </File>
+    <File Include="Views/TravelTourBacklinks/Create.cshtml">
+      <publishTime>09/10/2017 21:43:45</publishTime>
+    </File>
+    <File Include="Views/TravelTourBacklinks/Delete.cshtml">
+      <publishTime>09/10/2017 21:43:46</publishTime>
+    </File>
+    <File Include="Views/TravelTourBacklinks/Details.cshtml">
+      <publishTime>09/10/2017 21:43:48</publishTime>
+    </File>
+    <File Include="Views/TravelTourBacklinks/Edit.cshtml">
+      <publishTime>09/10/2017 21:43:49</publishTime>
+    </File>
+    <File Include="Views/TravelTourBacklinks/Index.cshtml">
+      <publishTime>09/10/2017 22:21:14</publishTime>
+    </File>
+    <File Include="Views/TravelTourCategories/Create.cshtml">
+      <publishTime>08/24/2017 21:28:27</publishTime>
+    </File>
+    <File Include="Views/TravelTourCategories/Delete.cshtml">
+      <publishTime>08/24/2017 21:28:27</publishTime>
+    </File>
+    <File Include="Views/TravelTourCategories/Details.cshtml">
+      <publishTime>08/24/2017 21:28:27</publishTime>
+    </File>
+    <File Include="Views/TravelTourCategories/Edit.cshtml">
+      <publishTime>08/24/2017 21:28:27</publishTime>
+    </File>
+    <File Include="Views/TravelTourCategories/Index.cshtml">
+      <publishTime>09/11/2017 05:05:02</publishTime>
+    </File>
+    <File Include="Views/TravelTourImages/Create.cshtml">
+      <publishTime>08/24/2017 21:28:27</publishTime>
+    </File>
+    <File Include="Views/TravelTourImages/Delete.cshtml">
+      <publishTime>08/24/2017 21:28:27</publishTime>
+    </File>
+    <File Include="Views/TravelTourImages/Details.cshtml">
+      <publishTime>08/24/2017 21:28:27</publishTime>
+    </File>
+    <File Include="Views/TravelTourImages/Edit.cshtml">
+      <publishTime>08/24/2017 21:28:27</publishTime>
+    </File>
+    <File Include="Views/TravelTourImages/Index.cshtml">
+      <publishTime>08/24/2017 21:28:27</publishTime>
+    </File>
+    <File Include="Views/TravelTourPackages/Create.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/TravelTourPackages/Delete.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/TravelTourPackages/Details.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/TravelTourPackages/Edit.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/TravelTourPackages/Index.cshtml">
+      <publishTime>09/08/2017 19:59:05</publishTime>
+    </File>
+    <File Include="Views/TravelTourTags/Create.cshtml">
+      <publishTime>09/08/2017 18:34:32</publishTime>
+    </File>
+    <File Include="Views/TravelTourTags/Delete.cshtml">
+      <publishTime>09/08/2017 18:34:33</publishTime>
+    </File>
+    <File Include="Views/TravelTourTags/Details.cshtml">
+      <publishTime>09/08/2017 18:34:34</publishTime>
+    </File>
+    <File Include="Views/TravelTourTags/Edit.cshtml">
+      <publishTime>09/08/2017 18:34:36</publishTime>
+    </File>
+    <File Include="Views/TravelTourTags/Index.cshtml">
+      <publishTime>09/08/2017 20:26:58</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>07/30/2017 13:44:23</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/10/2017 23:28:31</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
