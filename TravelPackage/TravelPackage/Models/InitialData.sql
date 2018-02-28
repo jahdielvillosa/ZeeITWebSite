@@ -6,10 +6,10 @@ Insert into tpUoms([Measure],[Remarks]) values
 
 --AREAS -> SERVICES-----
 Insert into tpAreas([Name],[PageRemarks],[PageView],[PgFeatureImg],[Sort]) values 
-('Software Development','We develop unique and tailored software applications based on the needs of our partners. Our applications provide the best experience in Desktop, Mobile and Web. ','DavaoPage','/Images/icons/software.png',1),
-('Web Development','We use the latest technologies in building websites for our partners. We will handle design,development, deployment and maintenance that are compatible in every device.','BoholPage','/Images/icons/web.png',2),
-('Industrial and Home Automation','Our team finds the best way to solve problems and automate processes in your home or business. ','CamiguinPage','/Images/icons/automation.png',3),
-('IT Consultation',' We will help you decide and solve business problems. Our consultants will find the best solution using the best technology available in the market.','CamiguinPage','/Images/icons/chat.png',4);
+('Software Development','We develop unique and tailored software applications based on the needs of our partners. Our applications provide the best experience in Desktop, Mobile and Web. ','DavaoPage','/Images/icons/code.png',1),
+('Web Development','We use the latest technologies in building websites for our partners. We will handle design,development, deployment and maintenance that are compatible in every device.','BoholPage','/Images/icons/html.png',2),
+('Industrial and Home Automation','Our team finds the best way to solve problems and automate processes in your home or business. ','CamiguinPage','/Images/icons/gear.png',3),
+('IT Consultation',' We will help you decide and solve business problems. Our consultants will find the best solution using the best technology available in the market.','CamiguinPage','/Images/icons/chat2.png',4);
 
 -- PROJECTS ---
 Insert into [tpProducts]([Name],[ShortRemarks],[PageView],[PgFeatureImg], [Sort], [tpAreasId]) values 
