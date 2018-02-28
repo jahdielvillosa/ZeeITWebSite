@@ -14,9 +14,9 @@ namespace TravelPackage.Controllers
     {
         private TravelDBContainer db = new TravelDBContainer();
 
-        public ActionResult Index(int? option)
+        public ActionResult Index()
         {
-            if ( option == 1 ) return View(db.tpAreas.ToList().OrderBy(d => d.Sort));
+            //if ( option == 1 ) return View(db.tpAreas.ToList().OrderBy(d => d.Sort));
 
             //string currentUrl = Request.Url.AbsoluteUri;
             //int iPreChars = 7; // http://
@@ -43,8 +43,9 @@ namespace TravelPackage.Controllers
             //sTemp = sPartUri.Substring(0, iRemainingChars);
             //if (sTemp == s1)
             //    return RedirectToAction("Destination", new { id = 2, AreaName = "Bohol" });
-            ViewBag.Projects = db.tpProducts.ToList();
-            return View(db.tpAreas.ToList().OrderBy(d => d.Sort));
+            //ViewBag.Projects = db.tpProducts.ToList();
+            //return View(db.tpAreas.ToList().OrderBy(d => d.Sort));
+            return View();
         }
 
         public ActionResult Destination(int? id, string AreaName)

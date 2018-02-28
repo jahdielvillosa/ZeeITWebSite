@@ -1,5 +1,4 @@
-﻿@model IEnumerable<TravelPackage.Models.tpAreas>
-
+﻿
 @{
     ViewBag.metaTitle = "ZeeIT Technologies";
     ViewBag.metaDescription = "IT Software Services";
@@ -16,20 +15,69 @@
 <!--Services -->
 <div class="container">
     <h1 class="Title">Services</h1>
-        @foreach (var item in Model)
-        {
+    <div class="row">
         <div class="col-sm-6 services">
             <div class="col-sm-3">
-                <img class="services-img" src="@item.PgFeatureImg">
+                <img class="services-img" src="~/Images/icons/code.png">
             </div>
             <div class="col-sm-9 services">
-                <h3 class="services">@item.Name</h3>
+                <h3 class="services">Software Development</h3>
                 <p>
-                   @item.PageRemarks
+                    We develop unique and tailored software
+                    applications based on the needs of our
+                    partners. Our applications provide the
+                    best experience in Desktop, Mobile and Web.
+
                 </p>
             </div>
         </div>
-        }
+
+        <div class="col-sm-6 services">
+            <div class="col-sm-3">
+                <img class="services-img" src="~/Images/icons/web.png">
+            </div>
+            <div class="col-sm-9 services">
+                <h3 class="services">Web Development</h3>
+                <p>
+                    We use the latest technologies in building 
+                    websites for our partners. We will handle 
+                    design,development, deployment and maintenance
+                    that are compatible in every device. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 services">
+            <div class="col-sm-3">
+                <img class="services-img" src="~/Images/icons/gear.png">
+            </div>
+            <div class="col-sm-9 services">
+                <h3 class="services"> Industrial and Home Automation</h3>
+                <p>
+                    Our team finds the best way to solve problems and 
+                    automate processes in your home or business. 
+                </p>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 services">
+            <div class="col-sm-3">
+                <img class="services-img" src="~/Images/icons/chat2.png">
+            </div>
+            <div class="col-sm-9 services">
+                <h3 class="services">IT Consultation</h3>
+                <p>
+                    We will help you decide and solve business
+                    problems. Our consultants will find the best
+                    solution using the best technology available 
+                    in the market. 
+                </p>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 <!--Projects-->
